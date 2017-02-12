@@ -5,5 +5,5 @@ go:
   - 1.7.x
   - master
 
-script: ls; find .
+script: pwd; cd $GOPATH; find .
 
