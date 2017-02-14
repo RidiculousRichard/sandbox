@@ -5,5 +5,5 @@ go:
   - 1.7.x
   - master
 
-script: pwd; echo "$GOPATH"; cd $GOPATH; ls -lahtr ./bin/; ./bin/hello
+script: pwd; echo "$GOPATH"; cd $GOPATH; ls -lahtr ./bin/; ./bin/sandbox
 
