@@ -1,9 +1,17 @@
 language: go
 
 go:
-  - 1.6.x
   - 1.7.x
   - master
 
-script: pwd; echo "$GOPATH"; cd $GOPATH; ls -lahtr ./bin/; ./bin/sandbox
+before_install:
+  - go get github.com/mattn/goveralls
+  
+script: 
+  - '[ "${TRAVIS_PULL_REQUEST}" != "false" ] || $HOME/gopath/bin/goveralls -service=travis-ci -repotoken $COVERALLS_TOKEN'
+  - cd $GOPATH
+  - ls -lahtr ./bin/
+  - find .
+  - go test -v ./src/github.com/RidiculousRichard/sandbox
+  - ./bin/sandbox
 
