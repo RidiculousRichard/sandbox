@@ -1,0 +1,19 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "ONHg+36MIdsQOl6NZeYa8ryl+OE=",
+			"path": "github.com/mattn/goveralls",
+			"revision": "8482d0ebd2a64f95ce02d2b9b7065b0d6fe9151b",
+			"revisionTime": "2016-12-09T06:16:23Z"
+		},
+		{
+			"checksumSHA1": "O5eYI3n1WdaC30AxQjETe3dAQHU=",
+			"path": "golang.org/x/tools/cover",
+			"revision": "8e779ee0a4509783f6940db32d1a4e8df910cc8b",
+			"revisionTime": "2017-02-14T15:12:52Z"
+		}
+	],
+	"rootPath": "sandbox"
+}
